@@ -63,16 +63,18 @@ export default{
 
 <template>
 
-    <div class="container">
-        <div class="row">
-            <img src="../../public/dc-logo.png" alt="logo">
-            <ul>
-                <li v-for="(link, index) in links" :key="index">
-                    <a :href="link.link">{{ link.label }}</a>
-                </li>
-            </ul>
+    <header>
+        <div class="container">
+            <div class="row">
+                <img src="../../public/dc-logo.png" alt="logo">
+                <ul>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a :href="link.link">{{ link.label }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </header>
 
 </template>
 
