@@ -77,29 +77,40 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-    .container{
-        background-color: white;
-    }
     .row{
         display: flex;
         justify-content: space-between;
-    }
-
-    img{
-        width: 75px;
-        margin: 15px 0;
-    }
-    
-    ul{
-        display: flex;
-        align-items: center;
         
-        a{
-            color: black;
-            cursor: pointer;
-            margin: 10px;
-            font-weight: 600;
-            font-size: 12px;
+        img{
+            width: 75px;
+            margin: 15px 0;
+        }
+        
+        ul{
+            display: flex;
+    
+            li{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                &:hover{
+                    border-bottom: 4px solid #0074E8;
+                }
+            
+                a{
+                    color: black;
+                    cursor: pointer;
+                    margin: 10px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    
+                    &:hover{
+                        color: #0074E8;
+                    }
+                }
+    
+            }
         }
     }
 

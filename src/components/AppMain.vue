@@ -6,7 +6,7 @@
 
     <div class="container_1">
         <div class="row">
-            <h1>main1</h1>
+            <h2>Content goes here</h2>
         </div>
     </div>
 
@@ -22,10 +22,14 @@
     .container_1{
         background-color: black;
         color: white;
+
+        h2{
+            padding: 40px 0;
+        }
     }
 
     .container_2{
-        background-color: lightblue;
+        background-color: #0074E8;
     }
 
 </style>
