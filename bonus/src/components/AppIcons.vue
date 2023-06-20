@@ -2,12 +2,29 @@
 export default {
     data() {
         return {
-            navs:[
-                {icon: './src/assets/buy-comics-digital-comics.png', text: 'DIGITAL COMICS'},
-                {icon: './src/assets/buy-comics-merchandise.png', text: 'DC MERCHANDISE'},
-                {icon: './src/assets/buy-comics-subscriptions.png', text: 'SUBSCRIPTION'},
-                {icon: './src/assets/buy-comics-shop-locator.png', text: 'COMIC SHOP LOCATOR'},
-                {icon: './src/assets/buy-dc-power-visa.svg', text: 'DC POWER VISA'}
+            links:[
+                {
+                    icon: './src/assets/buy-comics-digital-comics.png',
+                    text: 'DIGITAL COMICS'
+                },
+
+                {
+                    icon: './src/assets/buy-comics-merchandise.png',
+                    text: 'DC MERCHANDISE'
+                },
+
+                {
+                    icon: './src/assets/buy-comics-subscriptions.png',
+                    text: 'SUBSCRIPTION'
+                },
+                {
+                    icon: './src/assets/buy-comics-shop-locator.png',
+                    text: 'COMIC SHOP LOCATOR'
+                },
+                {
+                    icon: './src/assets/buy-dc-power-visa.svg',
+                    text: 'DC POWER VISA'
+                }
             ]
         }
     },
@@ -18,9 +35,9 @@ export default {
 <template >
     <div class="container">
         <div class="row">
-            <div class="flex" v-for="(nav, index) in navs" :key="index">
-                <img  :src="nav.icon">
-                <div>{{ nav.text }}</div>
+            <div class="flex" v-for="(link, index) in links" :key="index">
+                <img  :src="link.icon">
+                <div>{{ link.text }}</div>
             </div>
         </div>
     </div>
@@ -43,8 +60,7 @@ export default {
             align-items: center;
         }
         img{
-            width: 60px;
-            height: 70px;
+            width: 30%;
             margin-left: 40px;
         }
 
