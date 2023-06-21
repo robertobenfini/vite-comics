@@ -44,20 +44,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use '../styles/partials/mixins' as *;
 .container{
-    background-color: #0074E8;
+    background-color: $color_blu;
     color: white;
     display: flex;
 
     .row{
         
-        display: flex;
-        align-items: center;
+        @include flex_center;
         padding: 35px 0;
 
         .flex{
-            display: flex;
-            align-items: center;
+            @include flex_center;
         }
         img{
             width: 30%;

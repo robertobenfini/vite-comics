@@ -16,7 +16,7 @@ export default {
         
         img{ 
             width: 200px;
-            height: 250px;
+            height: 200px;
             padding: 20px;
         }
 

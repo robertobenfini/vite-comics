@@ -67,10 +67,11 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use '../styles/partials/mixins' as *;
 
     .row{
-        display: flex;
-        justify-content: space-between;
+        @include flex_between;
     }
     
     .container{
@@ -106,24 +107,22 @@
         background-color: #303030;
 
         .sign{
-            display: flex;
-            align-items: center;
+            @include flex_center;
             
             a{
                 color: white;
                 padding: 10px;
-                border: 2px solid #0074E8;
+                border: 2px solid $color_blu;
             }
 
         }
 
         .social{
             padding: 35px 0 35px 0;
-            display: flex;
-            align-items: center;
+            @include flex_center;
 
             h3{
-                color: #0074E8;
+                color: $color_blu;
                 margin-right: 20px;
             }
 

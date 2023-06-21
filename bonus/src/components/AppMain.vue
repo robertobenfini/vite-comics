@@ -106,6 +106,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use '../styles/partials/mixins' as *;
     .container{
         background-color: #1c1c1c;
         color: white;
@@ -125,23 +127,22 @@ export default{
             margin-top: 50px;
 
             .current_series{
-                background-color: #0282F9;
+                background-color: $color_blu;
                 color: white;
                 font-size: 20px;
                 font-weight: bold;
                 padding: 8px 15px;
                 position: absolute;
-                top: 28%;
+                top: 31%;
                 left: 15%;
             }
             .card{
                 width: calc(100% / 6);
                 height: 250px;
-                margin-bottom: 50px;
             }
 
             button{
-                background-color: #0282F9;
+                background-color: $color_blu;
                 padding: 8px 40px ;
                 color: white;
                 border: transparent;
