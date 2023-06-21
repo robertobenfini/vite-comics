@@ -95,10 +95,16 @@ export default{
                 height: 100%;
                 display: flex;
                 align-items: center;
+                border: 4px solid transparent;
                 
                 &:hover{
                     border-bottom: 4px solid #0074E8;
                 }
+
+                &:hover a{
+                    color: #0074E8;
+                }
+
             
                 a{
                     color: black;
@@ -107,11 +113,7 @@ export default{
                     font-weight: 600;
                     font-size: 12px;
                     
-                    &:hover{
-                        color: #0074E8;
-                    }
                 }
-    
             }
         }
     }

@@ -32,11 +32,11 @@ export default {
 }
 </script>
 
-<template >
+<template>
     <div class="container">
         <div class="row">
             <div class="flex" v-for="(link, index) in links" :key="index">
-                <img  :src="link.icon">
+                <img :src="link.icon">
                 <div>{{ link.text }}</div>
             </div>
         </div>
