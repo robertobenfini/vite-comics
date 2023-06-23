@@ -5,24 +5,6 @@
 <template>
 
     <footer>
-        <div class="container_2">
-            <div class="row">
-                <img src="../assets/buy-comics-digital-comics.png" alt="">
-                <div>DIGITAL COMICS</div>
-    
-                <img src="../assets/buy-comics-merchandise.png" alt="">
-                <div>DC MERCHANDISE</div>
-    
-                <img src="../assets/buy-comics-subscriptions.png" alt="">
-                <div>SUBSCRIPTION</div>
-    
-                <img src="../assets/buy-comics-shop-locator.png" alt="">
-                <div>COMIC SHOP LOCATOR</div>
-    
-                <img src="../assets/buy-dc-power-visa.svg" alt="">
-                <div>DC POWER VISA</div>
-            </div>
-        </div>
     
         <div class="container">
             <div class="row">
@@ -85,30 +67,11 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use '../styles/partials/mixins' as *;
 
     .row{
-        display: flex;
-        justify-content: space-between;
-    }
-        .container_2{
-        background-color: #0074E8;
-        color: white;
-        width: 100%;
-        
-        .row{
-            align-items: center;
-            padding: 35px 0;
-
-            img{
-                width: 6%;
-                margin-left: 30px;
-            }
-
-            div{
-                margin-left: 10px;
-                font-size: 12px;
-            }
-        }
+        @include flex_between;
     }
     
     .container{
@@ -144,24 +107,22 @@
         background-color: #303030;
 
         .sign{
-            display: flex;
-            align-items: center;
+            @include flex_center;
             
             a{
                 color: white;
                 padding: 10px;
-                border: 2px solid #0074E8;
+                border: 2px solid $color_blu;
             }
 
         }
 
         .social{
             padding: 35px 0 35px 0;
-            display: flex;
-            align-items: center;
+            @include flex_center;
 
             h3{
-                color: #0074E8;
+                color: $color_blu;
                 margin-right: 20px;
             }
 

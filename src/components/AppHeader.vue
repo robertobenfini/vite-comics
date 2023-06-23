@@ -79,9 +79,10 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use '../styles/partials/mixins' as *;
     .row{
-        display: flex;
-        justify-content: space-between;
+        @include flex_between;
         
         img{
             width: 75px;
@@ -93,12 +94,17 @@ export default{
     
             li{
                 height: 100%;
-                display: flex;
-                align-items: center;
+                @include flex_center;
+                border: 4px solid transparent;
                 
                 &:hover{
-                    border-bottom: 4px solid #0074E8;
+                    border-bottom: 4px solid $color_blu;
                 }
+
+                &:hover a{
+                    color:$color_blu;
+                }
+
             
                 a{
                     color: black;
@@ -107,11 +113,7 @@ export default{
                     font-weight: 600;
                     font-size: 12px;
                     
-                    &:hover{
-                        color: #0074E8;
-                    }
                 }
-    
             }
         }
     }
